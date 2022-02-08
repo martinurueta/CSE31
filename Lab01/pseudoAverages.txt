@@ -1,0 +1,21 @@
+Input: X(any number from user)
+Output: Even Average and Odd Average (if it is not equal to zero)
+
+while (X does not equal 0){
+    split up the value
+        X mod 10 (to get the single digit)
+        Xadd = X;
+        X = X / 10(to reduce place digit)
+
+        if Xadd == even (Xadd % 2 == 0){
+            even Average = X;
+        }else{
+            Odd Average = X
+        }
+        even Average = even Average / number of while looping for even
+        odd Average = odd Average / number of while looping for odd
+        print even
+        print odd
+        if their zero
+            print no compute
+}

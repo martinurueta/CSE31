@@ -1,0 +1,23 @@
+Partners:
+
+TPS2:
+1. cc -g punishment.c -o punish
+2. gdb ./punish.out
+3. use "run"
+4. "break [filename]:[linenumber]"
+5. next
+6. you just do p and what ever the variable name is
+7. call it next until finish
+8. q for quit
+
+TPS3:
+1. there are 4 variables and there are 2 pointers that are named as pointers for x and y
+2. it shoots random numbers
+3. having them point to something and having a number that arr can hold
+8. This result kinda make sense because there is an adress in each block of the array, it save a part of it in the array like 4bytes of adress
+question 4-7 answered through pointers.c
+
+
+
+
+

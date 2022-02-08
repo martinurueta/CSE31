@@ -1,0 +1,18 @@
+TPS 1
+Group Members Name: George Chong, Cassandra Chen
+TPS 2
+1. open Terminal by directly pressing [ctrl+alt+T]
+    a. Yes you can open more than one terminal by pressing [ctrl + shift + N]
+    b. You can use multiple terminals for one to be server side terminal, one to be system side terminal, and one to run the servers.
+2. The command is [dir] and [ls] to see what is in the directory
+3.  The command to navigate to the Desktop directory is [cd ~/Desktop]
+4. To create a new directory for CSE 31 is [mkdir CSE31]
+TPS 3
+2.
+3. gcc main.c -o main
+4. if it creates an executeable file and gives no error in the terminal
+5. -c Compiles source files to object files without linking to any other object files.
+6. -g option is for debugging.
+7. gcc main.c -o cselab1
+8. it will create an executeable file name a.exe
+9. .\a.exe to rune the code

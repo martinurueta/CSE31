@@ -1,0 +1,3 @@
+Assignment 1:
+1.  line 18 give the segmentation fault
+2. we can fix it by changing it to input to &input
