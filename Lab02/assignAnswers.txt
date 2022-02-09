@@ -1,3 +1,10 @@
 Assignment 1:
 1.  line 18 give the segmentation fault
 2. we can fix it by changing it to input to &input
+3.The bug was that sum was not being added up and it needed a reference
+4. added a reference to sum and a pointer in the function read_value for sum
+
+Assignment 2:
+1. The output is working
+2. it overwrites string one and it is a bug because the string was not ended \0 'null'
+3. The bug is that (,) is breaking the string into to parts
