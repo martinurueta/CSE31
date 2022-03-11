@@ -1,0 +1,15 @@
+TPS 1
+1. Static, stack, and heap
+    Static - global variable storage, permanent for the entire run of the program. any veriable outside of the main(){}
+    stack - local variable storage (automatic, continuous memory). any variable inside the main(){}
+    heap -  dynamic storage (large pool of memory, not allocated in contiguous order). use pointers to alocate memory in for an array str etc.
+2.
+    a. 3 variable
+    b. 2 pointer one is pointed to nums and the other is pointed to a pointer to nums
+3. done
+4. done
+TPS 2
+1. done
+2. done
+3. 
+

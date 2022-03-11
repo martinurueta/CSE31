@@ -1,0 +1,20 @@
+TPS 1
+1. MARS (MIPS Assembler and Runtime Simulator)
+2. Done
+3. Done
+4. 
+    a. we load the file by opening it
+    b. we asemble the file by clicking run -> assemble
+    c. and then to run it we click play
+    d. no we must assemble first before runing it
+    e. we would click on run one at a time
+    f. we would click the reset button to reset the mips memory and registar
+TPS 2
+1.
+2. function named fib will occur if $t3 does not equal 0
+3. will jump unconditionally back to fib which is line 10
+4. to set a break you check mark the box, when you click run it will run once and stop at line 15, 
+5. to continue it you click run again, until it jump past the breakpoint line
+6. The content is on the right side. to modify the value is click on the value box and type in the new value
+7. it is storing in $at with an address of 268500992
+8. if v0 is one it will output $a0 value and if v0 is 10 it will end the syscall

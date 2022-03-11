@@ -1,0 +1,23 @@
+TPS 1
+1. this printed out the hex number of 2 to be 2 because hex is based 16 (0-F)
+2. I believe it will print out capital A or 0x41
+3. I was incorrect that its input is 44434241  this printed DCBA in hex
+4. it prints 2 and surprise
+5. 
+    a. 2 array were allocated in this program
+    b. they are not pointed in the same direction
+    c. four_int[0] is point to four_c
+6. there is 4 bits allocated in each int array
+7. done(drawing)
+8. I see that four_c is under the 1 bit of int array of index 0
+9. done(drawing)
+10. so we have to access memory if we want to make a malloc 2d arrays or even 3d if we want to
+
+TPS 2
+1. line 8 adds add more rows of that 1d array to make it 2d
+2. we would do *(arr + i) to access the values of the array
+3. we would do *(*(arr + i) + j) to access the values of a 2d array
+4. we need to output the size so we can print all of nxn array
+5. done
+6. done
+7. done
