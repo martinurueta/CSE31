@@ -205,7 +205,7 @@ void markpath(int x, int y){ // mark path if found letter
     int temp = 1;
     counter++;
     for(int i = 0; i < 100; i++){ // powers of 10, i.e. step 2 and step 4 turns to "42" in seach path
-        if (temp < sum){
+        if (temp - 1 < sum){
             temp = temp * 10;
         }else if ( temp > sum){
             sum = temp * counter + sum;
