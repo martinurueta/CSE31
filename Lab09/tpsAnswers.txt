@@ -1,0 +1,22 @@
+TPS #1
+4. 32 bits
+5. There are 3 types (i, r, j). R = add, mult, slt
+6a. It is instruction type I, it has 4 fields (opcode, rs, rt, immediate)
+6b. 0x08 (opcode), $zero (rs), 0x0 (rs), $s0 (rt), 0x10 (rt), 25 (decimal) or 0x19 (hexadecimal)
+6c. Machine code is 0x0230402a, in binary it is 0000 0010 0011 0000 0100 0010 1010.
+7a. Machine code is 0x0230402a, in binary it is 0000 0010 0011 0000 0100 0010 1010.
+7b. It is an r instruction type based off the most left digits, there are 6 fields (opcode, rs,rt,rd,shamt,funct)
+7c. op: 0, shmt: 0, funct: 10 1010, rd: 08, 
+7d. It is an slt instruction, we know this based off the opcode and hext. 
+7e. Yes, they match up.
+8a. i format
+8b. opcode is 0x05, s is 0x10, rt is 0x00
+8c. the label is "LESS" at 0x004001c
+8d. No, we can't fit 32 bits into 16 bits
+8e. The immediate value is 1
+8f. Machine code: 0001 0101 0000 0000 0000 0000 0001 1100   Hex: 0x1500001C
+9a. j format, it has 3 fields.
+9b. The opcode is 000010
+9c. It is a j instruction and the address it jumps to is 0x0040030.
+9d. You can fit 26 bits into the instruction, which you need to convert to binary to "squeeze" in. In binary, it is 0001 0000 0000 0000 00011 0000    
+9e. The machine code is : 0000 1000 0100 0000 0000 0000 0011 0000    Hex: 0x08400030

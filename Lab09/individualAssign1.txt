@@ -1,0 +1,62 @@
+7.  addi $s0, $zero, -15
+    addi $rt, $rs, -15
+    op: 0x08 = 001000
+    rs:  00000
+    rt:  10000
+    Imm:  = 1111 1111 1111 0001
+    Bin: 0010 0000 0001 0000 1111 1111 1111 0001
+    Hex: 0x2010fff1
+    Convert back to Bin: 0010 0000 0001 0000 1111 1111 1111 0001
+    (I format)
+    001000 00000 10000 1111111111110001
+        op    rs     rt      immediate
+     0x8    $0    $16         -15
+    addi $16, $0, -15
+    addi $s0, $zero, -15
+
+14. slt $t0, $s0, $s1
+    slt $rd, $rs, $rt, shamt, funct
+    op: 0x0 (R format)
+    rs: 10000
+    rt: 10001
+    rd: 01000
+    shamt: 00000 (doesn't shift)
+    funct: 0x2a = 101010
+    Bin: 000000 10000 10001 01000 00000 101010
+    Hex: 0x0211402a
+    R format
+    Convert back to Bin: 000000 10000 10001 01000 00000 101010
+                            op     rs    rt    rd  shamt funct
+                            0x0  0x10  0x11  0x08  0x0   0x2a
+    slt $8, $16, $17
+    slt $t0, $s0, $s1
+
+17. beq $t0, $zero, LEEQ
+    beq $rs, $rt, Immediate
+    op: 0x4 = 000100
+    rs: 01000
+    rt: 00000
+    Imm: 0000 0000 0000 0110
+    Bin: 0001 0001 0000 0000 0000 0000 0000 0110
+    Hex: 0x11000006
+    I format
+    Convert back to Bin: 000100 01000 00000 0000000000000110
+                            op     rs    rt     Immediate
+                            0x4   0x8   0x0        0x6
+    beq $8, $0, ([ address + (the line after)] + 6( then count the lines))
+    beq $t0, $zero, LEEQ
+
+20. j GRT
+    j Immediate
+    op: 0x2
+    Imm: 0x0040001c
+    Bin: 0000 1000 0001 0000 0000 0000 0000 0111
+    Hex: 0x08100007
+    j format
+    Convert back to Bin: 000010 0000 0100 0000 0000 0000 0001 11
+                            op           Immediate
+    change 26 bit adress to proper address:
+    Before: 0000 0100 0000 0000 0000 0001 11
+    After: 0000 0000 0100 0000 0000 0000 0001 1100
+    Label adress: GRT
+    j GRT

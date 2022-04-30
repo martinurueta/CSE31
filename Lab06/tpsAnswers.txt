@@ -1,0 +1,23 @@
+TPS 1
+1. 0x00400000 is text segment, data segment 0x10010000
+2. basic show the command in machine language while sources gets it from mips language. the only difference is that the variables/ registers have different names
+3. 32 bits
+4. 8 collumns
+5. each collumn could hold 4 bits 
+6. m:	.word 20
+7. 0x10010000
+8. str1: .asciiz "I love CSE31!"
+9. 268468224
+10. done
+11. done
+12. Loads address of n to $t3. lw loads the word from where t3 points to t3.
+
+TPS 2
+1. the reason we do this in mips is so to implement each compare separately
+2. done
+3. done
+4. done
+5. done
+6. done
+7. done
+8. done

@@ -1,0 +1,24 @@
+TPS 1
+1. Done
+2. Done
+3. Done
+4. Done
+5. we do not need n any more and as well as we dont need lw but we do need la to load the integer that the user inputs
+6. Done
+
+TPS 2
+1. it should output 29
+2. Done
+3. Done
+4. Done
+5. move v0 to a0
+6.Done
+7.Done 3 integer one is used as the return adresss 
+8.Done
+9.Done
+10.Done we need to save a0 to be able to save the m variable so we can do the recursions for m - 1 and m - 2 
+11.Done
+12.Done it will over the original v0
+13.Done
+14.Done
+15.Done the values is a0 witch is the total and ra the return address
