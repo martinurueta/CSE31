@@ -14,7 +14,7 @@ str5: .asciiz "Average (rounded up) with dropped scores removed: "
 
 
 .text 
-
+# worked with Angelo Fatali
 # This is the main program.
 # It first asks user to enter the number of assignments.
 # It then asks user to input the scores, one at a time.
@@ -118,19 +118,26 @@ print:
 # It performs SELECTION sort in descending order and populates the sorted array
 selSort: # $a0 = lens
 	# Your implementation of selSort here
-	move $t0, $0 #$ t0 = int i
+	move $t0, $0 # $t0 = int i
 	move $t7, $a0 # $t7 = $a0 = lens
 copy:
+	#orig[i]
 	sll $t1, $t0, 2 
 	add $t1, $t1, $s1
 	lw $v0, 0($t1)
+	#sort[i]
 	sll $t2, $t0, 2 
 	add $t2, $t2, $s2
+	#sort[i] = orig[i]
 	sw $v0, 0($t2)
+	#i++
 	addi $t0, $t0, 1
+	# i < lens
 	bne $t0, $a0, copy
 	
 	move $t0, $0 # $t0 = int i
+	#doesnt preform selsort if there is only one element
+	beq $a0, 1, nosort
 	
 sort_loop1:
 	add $t2, $t0, $zero # $t2 = maxindex
@@ -149,10 +156,13 @@ sort_loop2:
 	
 	#sort[j] > sort[maxindex]
 	blt $t4, $t6, sort_else1
+	#if()
 	move $t2, $t1
-	
+	#else()
 sort_else1:
+	#j++
 	addi $t1, $t1, 1
+	# j < lens
 	bne $t1, $a0, sort_loop2
 	
 	#sort[maxindex]
@@ -176,10 +186,10 @@ sort_else1:
 	sw $t6, 0($t3) #s sort[i] = temp
 	
 	
-	addi $t0, $t0, 1 # i = i + 1
+	addi $t0, $t0, 1 # i++
 	addi $t7, $a0, -1 #make $t7 be lens - 1
 	bne $t0, $t7, sort_loop1 # i < lens - 1
-	
+nosort:
 	jr $ra
 	
 	
@@ -188,7 +198,7 @@ sort_else1:
 # Note: you MUST NOT use iterative approach in this function.
 calcSum: # $a1 = lens - drop $a0 = array 
 	# Your implementation of calcSum here
-	move $t2, $0
+	move $t2, $0 #t2 = will keep add up total
 	move $t3, $a1 # $t3 = lens - drop = $a2
 recur:
 	addi     $sp, $sp, -8
